@@ -193,6 +193,18 @@ public:
 
     void searchData()
     {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        int rollNo;
+        cout << "\nMasukkan NIM yang dicari: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
         
     }
 };
