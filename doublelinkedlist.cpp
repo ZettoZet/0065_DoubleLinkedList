@@ -205,6 +205,22 @@ public:
 
         Node *current = START;
 
-        
+        // Step 1: traverse to find  matching roll number
+        while (current != NULL && current->noMhs != rollNo)
+        {
+            current = current->next;
+        }
+
+        // Step 2: Output result
+        if (current == NULL)
+        {
+            cout << "Nim tidak di temukan\n"
+                 << endl;
+        }
+        else
+        {
+            cout << "NIM ditemukan\n";
+            cout << "NIM: " << current->noMhs << endl;
+        }
     }
 };
