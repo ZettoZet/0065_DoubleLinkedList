@@ -58,6 +58,21 @@ public:
             return;
         }
 
+        // insert in between Node
+        // Step 8: Locate position for insertion
+
+        Node *current = START;
+        while (current->next != NULL && current->next->noMhs < nim)
+        {
+            current = current->next;
+        }
+
+        if (current->next != NULL && nim == current->next->noMhs)
+        {
+            cout << "\nNIM tidak boleh duplikat" << endl;
+            return;
+        }
+
         
     }
 };
