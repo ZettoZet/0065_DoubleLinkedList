@@ -136,4 +136,9 @@ public:
 
         cout << "\nNIM " << rollNo << " berhasil dihapus" << endl;
     }
+
+    void traverse()
+    {
+        
+    }
 };
