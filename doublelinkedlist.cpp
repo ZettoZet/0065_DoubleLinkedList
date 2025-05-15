@@ -85,5 +85,8 @@ public:
         current->next = newNode; // step 9d: current.next = newNode
     }
 
-    
+    void hapus()
+    {
+        
+    }
 };
