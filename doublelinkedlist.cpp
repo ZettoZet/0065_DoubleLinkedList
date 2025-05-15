@@ -224,3 +224,51 @@ public:
         }
     }
 };
+
+int main()
+{
+    DoubleLinkedList list;
+    char choice;
+
+    do
+    {
+        cout << "\nMenu: " << endl;
+        cout << "1. Tambah Data" << endl;
+        cout << "2. Hapus Data" << endl;
+        cout << "3. Tampilkan Data" << endl;
+        cout << "4. Tampilkan Data Terbalik" << endl;
+        cout << "5. Cari Data" << endl;
+        cout << "6. Keluar" << endl;
+        cout << "Pilih menu: ";
+
+        cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            list.addNode();
+            break;
+        case 2:
+            list.hapus();
+            break;
+        case 3:
+            list.traverse();
+            break;
+        case 4:
+            list.revtraverse();
+            break;
+        case 5:
+            list.searchData();
+            break;
+        case 6:
+            return 0;
+        default:
+            cout << "\nPilihan tidak valid." << endl;
+        }
+        cout << "\nTekan Enter untuk melanjutkan..." << endl;
+        cin.ignore();
+        cin.get();
+        cout << endl;
+        system("clear");
+    } while (choice != 6);
+}
