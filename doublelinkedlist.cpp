@@ -149,16 +149,21 @@ public:
         Node *currentNode = START;
 
         // Step2: Repeat until currentNode == NULL
-        cout<< "\nData Mahasiswa yang ada di dalam list adalah: " << endl;
+        cout << "\nData Mahasiswa yang ada di dalam list adalah: " << endl;
         int i = 0;
 
         while (currentNode != NULL)
         {
-            cout << i + 1 <<". " << currentNode->noMhs << endl;
+            cout << i + 1 << ". " << currentNode->noMhs << endl;
 
             // Step 3: Move to next node
             currentNode = currentNode->next;
             i++;
         }
+    }
+
+    void revtraverse()
+    {
+        
     }
 };
