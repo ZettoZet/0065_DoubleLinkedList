@@ -87,6 +87,18 @@ public:
 
     void hapus()
     {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        cout << "\nMasukkan NIM yang akan dihapus: ";
+        int rollNo;
+        cin >> rollNo;
+
+        Node *current = START;
+
         
     }
 };
