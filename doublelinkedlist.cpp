@@ -99,6 +99,18 @@ public:
 
         Node *current = START;
 
+        // Step1: Search for the node to be deleted
+        while (current != NULL && current->noMhs != rollNo)
+        {
+            current = current->next;
+        }
+
+        if (current == NULL)
+        {
+            cout << "\nNIM tidak ditemukan" << endl;
+            return;
+        }
+
         
     }
 };
