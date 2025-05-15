@@ -170,6 +170,24 @@ public:
             return;
         }
 
-        
+        // Step 1: Move to last node
+        Node *currentNode = START;
+        int i = 0;
+        while (currentNode = START)
+        {
+            currentNode = currentNode->next;
+            i++;
+        }
+
+        // Step 2: Traverse backward
+        cout << "\n Data mahasiswa yang ada di dalam list dalam urutan terbalik adalah: " << endl;
+        while (currentNode != NULL)
+        {
+            cout << i + 1 << ". " << currentNode->noMhs << " " << endl;
+
+            // Step 3: Move to previous node
+            currentNode = currentNode->prev;
+            i--;
+        }
     }
 };
